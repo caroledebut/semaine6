@@ -1,0 +1,32 @@
+body {
+    font-family:Helvetica,Arial,Sans-serif;
+    color: rgb(82,82,82);
+    border : solid 1px black;
+}
+.conteneur { 
+    width: 100%;
+    max-width: 960px;
+    padding: 10px;
+    margin: 15px;
+}
+header {
+    background-image: url('images/old_map.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 200px;
+}
+header h2 {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+}
+main {
+    background-image: url( images/tree_bark.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+footer {
+    background-image: url( images/wet_snow.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
