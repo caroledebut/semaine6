@@ -1,5 +1,6 @@
 body {
     font-family:Helvetica,Arial,Sans-serif;
+    font-size: 24px;
     color: rgb(82,82,82);
     border : solid 1px black;
 }
@@ -15,18 +16,59 @@ header {
     background-attachment: fixed;
     height: 200px;
 }
-header h2 {
+#photo {
     display: inline-block;
-    margin-left: 25px;
-    text-align: center;
+    width: 320px;
 }
-main {
+#personne {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+}
+main { 
     background-image: url( images/tree_bark.png);
     background-repeat: repeat;
     background-attachment: fixed;
+}
+
+#formation {
+    display : inline-block;
+    vertical-align : top;
+    width: 305px;
+    padding-left: 10px;
+}
+#ambition {
+    display : inline-block;
+    vertical-align : top;
+    width: 305px;
+    padding-left: 10px;
+}
+#ambition p {
+    text-align: justify;
+}
+#experience {
+    display : inline-block;
+    vertical-align : top;
+    width: 305px;
+    padding-left: 10px;
+}
+#experience h3, #formation h3, #ambition h3 {
+    text-align: center;
+}
+#experience ul, #formation ul {
+    list-style-type: none;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 footer {
     background-image: url( images/wet_snow.png);
     background-repeat: repeat;
     background-attachment: fixed;
+}
+#map_canvas {
+    width : 50%;
+}
+#coordonnees {
+    width : 50%;
+    margin-left: 30px;
 }

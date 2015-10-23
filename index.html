@@ -3,28 +3,86 @@
  <!DOCTYPE html>
 <html>
     <head>
-        <title> Mon Curriculum Vitae</title>
+        <title> Curriculum Vitae</title>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript">
+                    function initialize() {
+                         map = new google.maps.Map(document.getElementById("map_canvas"), {
+                         zoom: 19,
+                         center: new google.maps.LatLng(48.858565, 2.347198),
+                         mapTypeId: google.maps.MapTypeId.ROADMAP
+                         });   
+                    } 
+                    
+                    if (navigator.geolocation)
+                      var watchId = navigator.geolocation.watchPosition(successCallback,
+                                                null,
+                                            {enableHighAccuracy:true});
+                    else
+                      alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5"); 
+                     
+                    function successCallback(position){
+                      map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+                      var marker = new google.maps.Marker({
+                      position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
+                      map: map
+                    }); 
+                    }
+        </script>
     </head>
-    <body>
+    <body onload="initialize()">
         <header>
             <div class="conteneur">
                 <div id="photo">
-                  <img src= "images/cat-913059_180.jpg" alt="Photo chat"/>
+                  <img src= "images/cat-913059__180.jpg" alt="Photo chat"/>
                 </div>
                 <div id="personne"> 
                   <h2>Carole DEBUT</h2>
-                  <p> Développeur WEB en télétravail ou en free lance</p>
+                  <p> Poste recherché : Développeur WEB en télétravail ou en freelance</p>
                 </div>
             </div>
         </header>
         <main>
             <div class="conteneur">
+
+                <div id="formation">
+                    <h3> Formation</h3>
+                   <ul>
+                    <li> 2003 : diplôme 5 à Valenciennes</li>
+                    <li> 2002 : diplôme 4 à Valenciennes</li>
+                    <li> 2001 : diplôme 3 à Valenciennes</li>
+                    <li> 2000 : diplôme 2 à Valenciennes</li>
+                    <li> 1977 : diplôme 1 à Douai</li>
+                   </ul>
+                </div>
+                <div id="ambition">
+                    <h3> Ambition</h3>
+                    <p> L'horticulture est un métier physique saisonnier, je souhaite donc le compléter en refaisant fonctionner ma tête dans un cadre très agréable</p>
+                </div>
+                <div id="experience">
+                    <h3> Expérience</h3>
+                    <ul>
+                      <li> 2004   -> : Gérante et propriétaire d'une exploitation horticole </li>
+                      <li> 2000-2004 : Responsable informatique industrielle d'un département en sidérurgie à chaud </li>
+                      <li> 1990-2000 : Responsable d'un service d'automatisme, d'informatique industrielle et d'instrumentation en sidérurgie </li>
+                      <li> 1990      : Responsable informatique industrielle dans une usine Valéo</li>
+                      <li> 1984-1900 : Ingénieur dans un service d'informatique industrielle dans une usine sidérurgique</li>
+                      <li> 1983-1984 : Analyste chez un constructeur d'ordinateurs américain</li>
+                    </ul>
+                </div>
             </div>
         </main>
         <footer>
             <div class="conteneur">
+                <div id="map_canvas">
+                </div>
+                <div id="coordonnees">
+                    <p>1 rue de l'Informatique</p>
+                    <p>75000 Paris</p>
+                    <p>tél : 01 10 01 10 01</p>
+                </div>
             </div>
         </footer>
     </body>
