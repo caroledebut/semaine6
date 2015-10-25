@@ -5,24 +5,29 @@
     <head>
         <title> Curriculum Vitae</title>
         <meta charset="utf-8">
+        <head>
+        …
+        <link href="bureau/simplon/exercices/bootstrap/css/bootstrap.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
-    <body onload="initialize()">
+    <body>
         <header>
-            <div class="conteneur">
-                <div id="photo">
-                  <img src= "images/cat-913059__180.jpg" alt="Photo chat"/>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                    <img src= "images/cat-913059__180.jpg" alt="Photo chat"/>
                 </div>
-                <div id="personne"> 
-                  <h2>Carole DEBUT</h2>
-                  <p> Poste recherché : Développeur WEB en télétravail ou en freelance</p>
+                <div class="col-md-6"> 
+                    <h2>Carole DEBUT</h2>
+                    <p> Poste recherché : Développeur WEB en télétravail ou en freelance</p>
                 </div>
-            </div>
+              </div>
+           </div>
         </header>
         <main>
-            <div class="conteneur">
-
-                <div id="formation">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
                     <h3> Formation</h3>
                    <ul>
                     <li> 2003 : diplôme 5 à Valenciennes</li>
@@ -31,12 +36,12 @@
                     <li> 2000 : diplôme 2 à Valenciennes</li>
                     <li> 1977 : diplôme 1 à Douai</li>
                    </ul>
-                </div>
-                <div id="ambition">
+                  </div> 
+                  <div class="col-md-4">
                     <h3> Ambition</h3>
                     <p> L'horticulture est un métier physique saisonnier, je souhaite donc le compléter en refaisant fonctionner ma tête dans un cadre très agréable</p>
-                </div>
-                <div id="experience">
+                  </div>
+                  <div class="col-md-4">
                     <h3> Expérience</h3>
                     <ul>
                       <li> 2004   -> : Gérante et propriétaire d'une exploitation horticole </li>
@@ -46,19 +51,22 @@
                       <li> 1984-1990 : Ingénieur dans un service d'informatique industrielle dans une usine sidérurgique</li>
                       <li> 1983-1984 : Analyste chez un constructeur d'ordinateurs américain</li>
                     </ul>
+                  </div>
                 </div>
-            </div>
+             </div>
         </main>
         <footer>
-            <div class="conteneur">
-                <div id="map">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43697.59770489936!2d1.6552723624498595!3d46.802338863246256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fba0aba3f377cd%3A0x192e8185c72bd6f7!2sCh%C3%A2teauroux!5e0!3m2!1sfr!2sfr!4v1445692949312" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <div id="coordonnees">
+                <div class="col-md-6">
                     <p>1 rue de l'Informatique</p>
                     <p>36000 Châteauroux</p>
                     <p>tél : 02 54 01 10 01</p>
                 </div>
+              </div>
             </div>
         </footer>
     </body>
