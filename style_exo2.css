@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+header {
+    width: 100%;
+    background-color:rgb(40,177,185);
+    padding: 10px;
+    height: 100px;
+}
+#image {
+    display: inline-block;
+}
+#texte {
+    display: inline-block;
+    text-align: left;
+}
+#point {
+    display: inline-block;
+    text-align:right;
+}
