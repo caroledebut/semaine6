@@ -1,20 +1,10 @@
 body {
-    background-color: black;
+  padding-top: 10px;
 }
-header {
-    width: 100%;
-    background-color:rgb(40,177,185);
-    padding: 10px;
-    height: 100px;
-}
-#image {
-    display: inline-block;
-}
-#texte {
-    display: inline-block;
-    text-align: left;
-}
-#point {
-    display: inline-block;
-    text-align:right;
+[class*="col-"], footer {
+  background-color: lightgreen;
+  border: 2px solid black;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
 }
